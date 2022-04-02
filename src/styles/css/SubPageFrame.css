@@ -1,0 +1,38 @@
+.sub_page_frame{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.sub_page_frame .page_sidebar{
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 30px);
+    width: 180px;
+    padding: 30px 0 0 0;
+    align-items: center;
+    background-color: #424242;
+}
+
+
+.sub_page_frame .sub_page_frame_body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: calc(100% - 180px);
+}
+
+.page_sidebar .page_sidebar_button{
+    display: flex;
+    height: 48px;
+    width: 120px;
+    color: #212121;
+    /*font-weight: bold;*/
+    margin-top: 20px;
+    font-size: 1.1rem;
+    background-color: gainsboro;
+}
+.page_sidebar .page_sidebar_button:hover{
+    background-color: white;
+}

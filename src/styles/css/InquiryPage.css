@@ -1,0 +1,281 @@
+.inquiry_page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-size: 0.9rem;
+    color: white;
+    overflow: hidden;
+}
+
+.inquiry_page .inquiry_page_title_and_button{
+    display: flex;
+    flex-direction: row;
+}
+
+.inquiry_page .inquiry_page_title_and_button .inquiry_page_add_post_button{
+    width: 120px;
+    height: 36px;
+    padding: 0;
+    font-size: 0.85rem;
+    color: #212121;
+    user-select: none;
+    margin: 24px 48px 0 auto;
+    background-color: gainsboro;
+}
+
+.inquiry_page .inquiry_page_title_and_button .inquiry_page_title{
+    /*flex: 1;*/
+    /*justify-content: flex-start;*/
+    /*align-items: flex-start;*/
+    width: fit-content;
+    height: fit-content;
+    padding: 24px 0 0 36px;
+    font-size: 1.5rem;
+    color: white;
+    user-select: none;
+}
+
+.inquiry_page .inquiry_page_body{
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 72px);
+    height: 100%;
+    padding: 24px 36px 0 36px;
+    overflow: auto;
+}
+
+.inquiry_page .inquiry_page_body .inquiry_post_preview_item{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    min-width: 360px;
+    width: 400px;
+    height: calc(100% - 50px);
+    margin: 17px 15px 0 15px;
+    font-size: 1.0rem;
+    border: 1px solid lightslategrey;
+    cursor: pointer;
+
+}
+
+.inquiry_page .inquiry_page_body .inquiry_post_preview_item:hover{
+    color: bisque;
+    border: 1px solid bisque;
+    opacity: 0.9;
+}
+
+.inquiry_post_preview_item .author{
+    display: flex;
+    width: 80px;
+    justify-content: flex-end;
+}
+
+.inquiry_post_preview_item .title{
+    display: flex;
+    margin: 20px 0 0 20px;
+    font-size: 1.3rem;
+    width: fit-content;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.inquiry_post_preview_item .photo{
+    display: flex;
+    margin: auto;
+    font-size: 1.3rem;
+    max-width: 330px;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inquiry_post_preview_item .photo .img{
+    display: flex;
+    max-width: 330px;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inquiry_post_preview_item .bottom{
+    display: flex;
+    flex-direction: row;
+    padding: 4px 4px 8px 4px;
+    width: calc(100% - 16px);
+    font-size: 1.0rem;
+    margin-top: auto;
+}
+
+.inquiry_post_preview_item .bottom .solved{
+    display: flex;
+    width: 100px;
+    color: lawngreen;
+    padding: 0 0 0 15px;
+    /*justify-content: center;*/
+}
+
+.inquiry_post_preview_item .bottom .waiting{
+    display: flex;
+    width: 220px;
+    color: crimson;
+    padding: 0 0 0 15px;
+    /*justify-content: center;*/
+}
+
+.inquiry_post_preview_item .bottom .date{
+    display: flex;
+    margin-left: auto;
+    width: 100px;
+    justify-content: center;
+}
+
+
+
+
+/* Notice Post View */
+.inquiry_page .inquiry_post_view{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 96px);
+    height: 100%;
+    padding: 24px 48px 0 48px;
+}
+
+.inquiry_post_view .inquiry_post_view_back_and_title{
+    display: flex;
+    flex-direction: row;
+}
+
+.inquiry_post_view .inquiry_post_view_back_and_title .inquiry_post_view_title{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 24px 0 16px 0;
+    font-size: 1.5rem;
+    color: white;
+    justify-content: flex-start;
+}
+
+.inquiry_post_view .inquiry_post_view_title_sub{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    /*padding: 0 8px 0 8px;*/
+    font-size: 1.0rem;
+    color: white;
+    border-bottom: 1px solid lightslategrey;
+}
+
+.inquiry_post_view_title_sub .author{
+    display: flex;
+    width: fit-content;
+    justify-content: flex-start;
+}
+
+.inquiry_post_view_title_sub .date{
+    display: flex;
+    margin-left: auto;
+    width: fit-content;
+    justify-content: center;
+}
+
+.inquiry_post_view .inquiry_post_view_back_and_title .inquiry_post_view_back_button{
+    width: 150px;
+    height: 36px;
+    padding: 0;
+    font-size: 0.85rem;
+    color: #212121;
+    user-select: none;
+    margin-left: auto;
+    background-color: gainsboro;
+}
+
+.inquiry_post_view .inquiry_post_view_back_button:hover{
+    background-color: white;
+}
+
+.inquiry_post_view .inquiry_post_view_content{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 12px 0 12px;
+    width: 100%;
+    height: calc(100% - 180px);
+    position: relative;
+    font-size: 1.0rem;
+    color: white;
+    /*overflow-x: auto;*/
+    overflow-y: auto;
+    white-space: pre-line;
+}
+
+
+/* Inquiry Add Post View */
+.inquiry_page .inquiry_add_post_view{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 96px);
+    height: 100%;
+    padding: 24px 48px 0 48px;
+    color: white;
+}
+
+.inquiry_page .inquiry_add_post_view .inquiry_add_post_view_title_text{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 40px;
+    font-size: 1.2rem;
+}
+
+.inquiry_page .inquiry_add_post_view .inquiry_add_post_view_title_textField{
+    display: flex;
+    /*justify-content: flex-start;*/
+    width: calc(100% - 60px);
+    padding: 16px 16px 10px 16px;
+    /*height: 40px;*/
+    /*font-size: 1.2rem;*/
+    color: white;
+    border: 1px solid darkgrey;
+    opacity: 0.95;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.inquiry_page .inquiry_add_post_view .inquiry_add_post_view_contents_text{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 40px;
+    margin: 20px 0 0 0;
+    font-size: 1.2rem;
+}
+
+.inquiry_page .inquiry_add_post_view .inquiry_add_post_view_contents_textField{
+    display: flex;
+    /*justify-content: flex-start;*/
+    width: calc(100% - 60px);
+    height: fit-content;
+    padding: 16px 16px 10px 16px;
+    /*height: 40px;*/
+    /*font-size: 1.2rem;*/
+    color: white;
+    border: 1px solid darkgrey;
+    border-radius: 4px;
+    opacity: 0.95;
+    background-color: white;
+}
+
+.inquiry_page .inquiry_add_post_view .inquiry_add_post_view_submit_button_container{
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+    width: 100%;
+}
+
+.inquiry_page .inquiry_add_post_view .inquiry_add_post_view_submit_button_container .inquiry_add_post_view_submit_button{
+    display: flex;
+    height: 48px;
+    width: 160px;
+    margin: 16px 26px 0 0;
+}

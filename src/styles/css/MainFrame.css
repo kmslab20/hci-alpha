@@ -1,0 +1,45 @@
+.main_frame{
+    width: 100vw;
+    height: 100vh;
+}
+
+.main_frame .main_frame_headerBar{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #023802;
+}
+
+.main_frame_headerBar .main_frame_headerBar_title{
+    color: white;
+    margin-left: 16px;
+}
+
+.main_frame_headerBar .main_frame_headerBar_buttons{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    margin-left: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.main_frame_headerBar .main_frame_headerBar_buttons .main_frame_headerBar_button_signIn{
+    height: 32px;
+    width: 100px;
+    margin-left: 16px;
+    font-size: 1.1rem;
+    background-color: antiquewhite;
+    border: none;
+}
+
+.main_frame .main_frame_body{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 60px);
+    font-size: 0.9rem;
+    background-color: #212121;
+}
+
